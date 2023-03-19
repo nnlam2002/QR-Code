@@ -41,4 +41,8 @@ copyBtn.addEventListener("click", () => {
 // When user click on form do fileInp Evenetlistener function
 form.addEventListener("click", () => fileInp.click());
 
-closeBtn.addEventListener("click", () => wrapper.classList.remove("active"));
+closeBtn.addEventListener("click", () => {
+    wrapper.classList.remove("active");
+    form.reset();
+});
+
